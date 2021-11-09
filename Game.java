@@ -48,7 +48,13 @@ public class Game {
     private void show() {
         for(int i = 0; i < 3 ; i++){
             for(int e = 0; e < 3 ; e++){
-                System.out.print(matriz[e][i] + " ");
+                if(matriz[e][i] == 1){
+                    System.out.print("X ");
+                }else if(matriz[e][i] == -1){
+                    System.out.println("O ");
+                }else{
+                    System.out.print(matriz[e][i] + " ");
+                }
             }
             System.out.println("");
         }
